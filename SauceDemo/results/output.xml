@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.2 on win32)" generated="2026-01-08T01:02:45.523789" rpa="false" schemaversion="5">
+<suite id="s1" name="Desafio SauceDemo - AeC" source="C:\Desafio-SauceDemo-AeC\SauceDemo\tests\Desafio_SauceDemo - AeC.robot">
+<test id="s1-t1" name="Cenário: Comprar o casaco usando Edge" line="9">
+<kw name="Abrir o site no Edge">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:45.632818" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-08T01:02:45.632668" elapsed="1.831567"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.464405" elapsed="0.044391"/>
+</kw>
+<status status="PASS" start="2026-01-08T01:02:45.632225" elapsed="1.876668"/>
+</kw>
+<kw name="Fazer login com usuario padrao fornecido pela plataforma">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.509685" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.509381" elapsed="0.068246"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.577943" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-01-08T01:02:47.598111" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.577786" elapsed="0.049259"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.627292" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.627165" elapsed="0.061541"/>
+</kw>
+<status status="PASS" start="2026-01-08T01:02:47.509138" elapsed="0.179658"/>
+</kw>
+<kw name="Colocar o casaco no carrinho">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=add-to-cart-sauce-labs-fleece-jacket</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.689212" elapsed="0.013360"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.702917" level="INFO">Clicking button 'id=add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id=add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.702769" elapsed="0.049539"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.752642" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
+<arg>class=shopping_cart_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.752476" elapsed="0.041886"/>
+</kw>
+<status status="PASS" start="2026-01-08T01:02:47.689045" elapsed="0.105403"/>
+</kw>
+<kw name="Preencher dados de entrega">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.794962" level="INFO">Clicking button 'id=checkout'.</msg>
+<arg>id=checkout</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.794847" elapsed="0.049833"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.845083" level="INFO">Typing text 'Jose' into text field 'id=first-name'.</msg>
+<arg>id=first-name</arg>
+<arg>Jose</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.844872" elapsed="0.049192"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.894330" level="INFO">Typing text 'Sousa' into text field 'id=last-name'.</msg>
+<arg>id=last-name</arg>
+<arg>Sousa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.894190" elapsed="0.045806"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.940299" level="INFO">Typing text '58170000' into text field 'id=postal-code'.</msg>
+<arg>id=postal-code</arg>
+<arg>58170000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.940135" elapsed="0.048956"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:47.989416" level="INFO">Clicking button 'id=continue'.</msg>
+<arg>id=continue</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:47.989246" elapsed="0.050915"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:48.040416" level="INFO">Clicking button 'id=finish'.</msg>
+<arg>id=finish</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-08T01:02:48.040283" elapsed="0.050991"/>
+</kw>
+<status status="PASS" start="2026-01-08T01:02:47.794679" elapsed="0.296676"/>
+</kw>
+<kw name="Validar se finalizou">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-01-08T01:02:48.104962" level="INFO">Element 'class=complete-header' contains text 'Thank you for your order!'.</msg>
+<arg>class=complete-header</arg>
+<arg>Thank you for your order!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-01-08T01:02:48.091731" elapsed="0.013320"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-08T01:02:48.105196" elapsed="2.077101"/>
+</kw>
+<status status="PASS" start="2026-01-08T01:02:48.091567" elapsed="2.090912"/>
+</kw>
+<doc>Teste de compra via Edge</doc>
+<status status="PASS" start="2026-01-08T01:02:45.631597" elapsed="4.551240"/>
+</test>
+<status status="PASS" start="2026-01-08T01:02:45.524802" elapsed="4.658913"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Desafio SauceDemo - AeC" id="s1" pass="1" fail="0" skip="0">Desafio SauceDemo - AeC</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
